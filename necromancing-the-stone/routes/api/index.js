@@ -1,15 +1,15 @@
 const path          = require('path');
 const router        = require('express').Router();
-const stripeRoutes  = require('./stripe');
-//const authRoutes    = require('./auth');
-const shopRoutes    = require('./shop');
+//const stripeRoutes  = require('./stripe');
+const authRoutes    = require('./auth');
+//const shopRoutes    = require('./shop');
 
 
-router.use('/stripe', stripeRoutes);
+//router.use('/stripe', stripeRoutes);
 
-//router.use('/auth', authRoutes);
+router.use('/auth', authRoutes);
 
-router.use('/shop', shopRoutes);
+//router.use('/shop', shopRoutes);
 
 
 // For anything else, render the html page
