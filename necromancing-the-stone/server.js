@@ -1,12 +1,12 @@
 const express   = require('express');
-const connectDB = require('./config/db');
+//const connectDB = require('./config/db');
 const path      = require('path');
 const routes    = require('./routes');
 
 const app = express();
 
 // Connect Database
-connectDB();
+//connectDB();
 
 // Middleware
 app.use(express.json());
